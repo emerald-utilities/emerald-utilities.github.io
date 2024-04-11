@@ -134,3 +134,37 @@ h2 {
   justify-content: left; /* Align items horizontally centered */
   align-items: center; /* Align items vertically centered */
 }
+
+/* Remove width limitation for inner-content on mobile */
+@media screen and (max-width: 768px) {
+  #inner-content {
+    width: 95%;
+  }
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust font size for smaller screens */
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  /* Center align button on smaller screens */
+  .button {
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Adjust logo size for smaller screens */
+  #logo {
+    width: 80px;
+  }
+}
