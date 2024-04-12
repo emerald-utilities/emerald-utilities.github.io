@@ -129,7 +129,11 @@ h2 {
   margin-right: 10px; /* Optional: Add some space between the image and the heading */
 }
 
-#container {
+#center {
+  text-align: center;
+}
+
+.container {
   display: flex;
   justify-content: left; /* Align items horizontally centered */
   align-items: center; /* Align items vertically centered */
@@ -142,8 +146,22 @@ h2 {
   }
 }
 
+#side-image {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  #side-image {
+    display: none;
+  }
+}
+
 /* Adjust styles for smaller screens */
 @media screen and (max-width: 768px) {
+  #app {
+    display: none;
+  }
+
   /* Adjust font size for smaller screens */
   h2 {
     font-size: 40px;
